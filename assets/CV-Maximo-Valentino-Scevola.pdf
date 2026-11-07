@@ -1,0 +1,93 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1958 >>
+stream
+BT
+/F1 20 Tf
+50 760 Td
+(Maximo Valentino Scevola) Tj
+/F1 13 Tf
+0 -24 Td
+(Disenador UX/UI & Desarrollador de Software) Tj
+/F2 10 Tf
+0 -18 Td
+(Concepcion del Uruguay, Entre Rios, Argentina | valenscevola@gmail.com | github.com/valenscevola) Tj
+/F1 12 Tf
+0 -34 Td
+(PERFIL PROFESIONAL) Tj
+/F2 10 Tf
+0 -16 Td
+(Estudiante avanzado de la Licenciatura en Sistemas de Informacion (UADER - FCyT). Especializado en) Tj
+0 -14 Td
+(la interseccion entre el diseno de experiencia de usuario accesible (WCAG 2.2 AA) y el desarrollo) Tj
+0 -14 Td
+(de arquitecturas backend limpias en Python, FastAPI, SQLAlchemy y JavaScript moderno.) Tj
+/F1 12 Tf
+0 -30 Td
+(FORMACION & EXPERIENCIA) Tj
+/F1 10 Tf
+0 -16 Td
+(2024 - Presente | Licenciatura en Sistemas de Informacion - UADER FCyT) Tj
+/F2 10 Tf
+0 -14 Td
+(- Ingenieria de Software, Algoritmos y Estructuras de Datos, POO, Arquitectura y Diseno UX/UI.) Tj
+/F1 10 Tf
+0 -18 Td
+(2025 - Presente | Desarrollador de Software & Disenador UX/UI) Tj
+/F2 10 Tf
+0 -14 Td
+(- Desarrollo de aplicaciones web y APIs RESTful con Python (FastAPI, SQLAlchemy) y HTML5/CSS3/JS.) Tj
+0 -14 Td
+(- Research, arquitectura de informacion, design systems y prototipado interactivo en Figma.) Tj
+/F1 12 Tf
+0 -30 Td
+(PROYECTOS DESTACADOS) Tj
+/F2 10 Tf
+0 -16 Td
+(- SmartTicket (2026): Plataforma de venta de entradas. Checkout en 3 pasos + API RESTful en FastAPI.) Tj
+0 -14 Td
+(- Rediseno y Despliegue Web UX/UI (2026): Design System 100% WCAG AA y CI/CD en Netlify.) Tj
+0 -14 Td
+(- Motor de Grafos Star Wars (2026): Optimizacion de rutas con algoritmos de Dijkstra y Kruskal.) Tj
+/F1 12 Tf
+0 -30 Td
+(STACK TECNICO) Tj
+/F2 10 Tf
+0 -16 Td
+(- UX/UI: Figma, User Research, Arquitectura de Informacion, Design Systems, Accesibilidad WCAG 2.2.) Tj
+0 -14 Td
+(- Frontend: HTML5 Semantico, CSS3 (Grid & Flexbox), JavaScript (ES6+), Responsive Design.) Tj
+0 -14 Td
+(- Backend & Herramientas: Python, FastAPI, SQLAlchemy, Node.js, Git/GitHub, Linux (WSL), Docker.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000002261 00000 n 
+0000002336 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2406
+%%EOF
