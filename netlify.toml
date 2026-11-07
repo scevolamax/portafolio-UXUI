@@ -1,0 +1,27 @@
+# Configuración de Despliegue y Seguridad para Netlify
+# Proyecto: Portfolio Personal — Máximo Valentino Scévola
+
+[build]
+  publish = "."
+
+# Security Headers recomendados (Best Practices en Lighthouse)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Caché optimizada para recursos estáticos en /assets/ (Performance en Lighthouse)
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirección de rutas inexistentes a la página 404 personalizada con estado HTTP 404
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
