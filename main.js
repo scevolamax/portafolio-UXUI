@@ -4,12 +4,108 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeToggle();
   initMobileNavigation();
   initCaseStudyModal();
   initCopyEmail();
   initScrollSpy();
   initContactFormValidation();
 });
+
+/**
+ * 0. Toggle de Tema Claro / Oscuro Accesible (`#theme-toggle`)
+ * - Respeta `prefers-color-scheme` por defecto si no hay preferencia guardada en `localStorage`.
+ * - Permite alternar manualmente entre "light" (#F6F5F2) y "dark" (#0B1120) en `<html data-theme="...">`.
+ * - Persiste la elección en `localStorage` y actualiza `aria-pressed` y `<meta name="theme-color">`.
+ */
+function initThemeToggle() {
+  const root = document.documentElement;
+  const toggleBtn = document.getElementById('theme-toggle');
+  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+  const systemDarkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+  const getEffectiveTheme = () => {
+    const explicitTheme = root.getAttribute('data-theme');
+    if (explicitTheme === 'dark' || explicitTheme === 'light') {
+      return explicitTheme;
+    }
+    try {
+      const storedTheme = localStorage.getItem('theme');
+      if (storedTheme === 'dark' || storedTheme === 'light') {
+        return storedTheme;
+      }
+    } catch {
+      // Fallback si localStorage está bloqueado
+    }
+    return systemDarkQuery.matches ? 'dark' : 'light';
+  };
+
+  const applyTheme = (theme, persist = false) => {
+    root.setAttribute('data-theme', theme);
+    if (themeColorMeta) {
+      themeColorMeta.setAttribute('content', theme === 'dark' ? '#0B1120' : '#F6F5F2');
+    }
+    if (toggleBtn) {
+      const isDark = theme === 'dark';
+      toggleBtn.setAttribute('aria-pressed', String(isDark));
+      toggleBtn.setAttribute(
+        'title',
+        isDark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'
+      );
+    }
+    if (persist) {
+      try {
+        localStorage.setItem('theme', theme);
+      } catch {
+        // Ignorar errores de almacenamiento privado
+      }
+    }
+  };
+
+  // Inicializar estado según localStorage o preferencia del sistema
+  const initialTheme = getEffectiveTheme();
+  try {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || saved === 'light') {
+      applyTheme(saved, false);
+    } else if (toggleBtn) {
+      const isDark = initialTheme === 'dark';
+      toggleBtn.setAttribute('aria-pressed', String(isDark));
+      if (themeColorMeta) {
+        themeColorMeta.setAttribute('content', isDark ? '#0B1120' : '#F6F5F2');
+      }
+    }
+  } catch {
+    // Continuar con estado por defecto
+  }
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      const nextTheme = getEffectiveTheme() === 'dark' ? 'light' : 'dark';
+      applyTheme(nextTheme, true);
+    });
+  }
+
+  // Escuchar cambios del sistema operativo si el usuario no forzó una preferencia manual
+  const handleSystemThemeChange = (event) => {
+    try {
+      if (!localStorage.getItem('theme')) {
+        const sysTheme = event.matches ? 'dark' : 'light';
+        root.removeAttribute('data-theme');
+        if (toggleBtn) toggleBtn.setAttribute('aria-pressed', String(event.matches));
+        if (themeColorMeta) {
+          themeColorMeta.setAttribute('content', sysTheme === 'dark' ? '#0B1120' : '#F6F5F2');
+        }
+      }
+    } catch {
+      // Sin acción adicional
+    }
+  };
+
+  if (typeof systemDarkQuery.addEventListener === 'function') {
+    systemDarkQuery.addEventListener('change', handleSystemThemeChange);
+  }
+}
 
 /**
  * 1. Menú Hamburguesa Mobile (`.mobile-menu-toggle` y `#mobile-menu`)

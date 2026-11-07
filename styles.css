@@ -14,6 +14,8 @@
   --accent-primary: #1E40AF;
   --accent-hover: #1E3A8A;
   --accent-active: #172554;
+  --accent-link: #1E40AF;
+  --accent-link-hover: #1E3A8A;
 
   --badge-bg: #ECFDF5;
   --badge-border: #6EE7B7;
@@ -31,6 +33,7 @@
 
   /* Superficie translúcida del Header */
   --header-bg: rgba(246, 245, 242, 0.88);
+  color-scheme: light;
 
   /* Typography Families */
   --font-heading: 'Space Grotesk', sans-serif;
@@ -62,38 +65,41 @@
   --duration-normal: 250ms;
 }
 
-/* BONUS: Soporte Dark Mode ("Esfera Azul Noche Pizarra" — Sin negro puro #0a0a0a) */
+/* BONUS: Soporte Dark Mode ("Azul Pizarra Horológico" #0B1120 — Contraste WCAG 2.2 AA/AAA >= 4.5:1) */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg-primary: #0B1120;
     --bg-surface: #1E293B;
     --bg-subtle: #0F172A;
 
-    --text-primary: #F8FAFC;
-    --text-secondary: #CBD5E1;
-    --text-placeholder: #94A3B8;
+    --text-primary: #F8FAFC;      /* 17.4:1 sobre #0B1120 | 13.0:1 sobre #1E293B (AAA) */
+    --text-secondary: #CBD5E1;    /* 12.1:1 sobre #0B1120 |  9.0:1 sobre #1E293B (AAA) */
+    --text-placeholder: #94A3B8;  /*  5.2:1 sobre #1E293B (AA) */
 
-    --accent-primary: #3B82F6;
-    --accent-hover: #60A5FA;
-    --accent-active: #2563EB;
+    --accent-primary: #2563EB;    /*  5.17:1 con texto #FFFFFF en botones (AA) */
+    --accent-hover: #1D4ED8;      /*  6.70:1 con texto #FFFFFF en botones (AA) */
+    --accent-active: #1E40AF;     /*  8.36:1 con texto #FFFFFF en botones (AAA) */
+    --accent-link: #60A5FA;       /*  7.50:1 sobre #0B1120 | 5.60:1 sobre #1E293B (AA) */
+    --accent-link-hover: #93C5FD; /* 10.40:1 sobre #0B1120 | 7.80:1 sobre #1E293B (AAA) */
 
-    --badge-bg: rgba(6, 95, 70, 0.35);
+    --badge-bg: #064E3B;
     --badge-border: #10B981;
-    --badge-text: #A7F3D0;
+    --badge-text: #D1FAE5;        /*  8.95:1 sobre #064E3B (AAA) */
 
     --border-subtle: #334155;
-    --border-input: #475569;
+    --border-input: #64748B;      /*  3.15:1 sobre #1E293B (Cumple WCAG 1.4.11 Non-text) */
 
     --focus-ring: #60A5FA;
-    --focus-shadow: rgba(59, 130, 246, 0.25);
-    --focus-shadow-primary: rgba(96, 165, 250, 0.35);
+    --focus-shadow: rgba(96, 165, 250, 0.3);
+    --focus-shadow-primary: rgba(147, 197, 253, 0.4);
 
-    --status-success: #22C55E;
-    --status-error: #F87171;
+    --status-success: #4ADE80;
+    --status-error: #FCA5A5;      /*  7.10:1 sobre #1E293B (AAA) */
 
     --header-bg: rgba(11, 17, 32, 0.88);
     --shadow-card: 0px 2px 6px rgba(2, 6, 23, 0.35);
     --shadow-card-hover: 0px 16px 32px -4px rgba(2, 6, 23, 0.55);
+    color-scheme: dark;
   }
 }
 
@@ -106,27 +112,30 @@
   --text-secondary: #CBD5E1;
   --text-placeholder: #94A3B8;
 
-  --accent-primary: #3B82F6;
-  --accent-hover: #60A5FA;
-  --accent-active: #2563EB;
+  --accent-primary: #2563EB;
+  --accent-hover: #1D4ED8;
+  --accent-active: #1E40AF;
+  --accent-link: #60A5FA;
+  --accent-link-hover: #93C5FD;
 
-  --badge-bg: rgba(6, 95, 70, 0.35);
+  --badge-bg: #064E3B;
   --badge-border: #10B981;
-  --badge-text: #A7F3D0;
+  --badge-text: #D1FAE5;
 
   --border-subtle: #334155;
-  --border-input: #475569;
+  --border-input: #64748B;
 
   --focus-ring: #60A5FA;
-  --focus-shadow: rgba(59, 130, 246, 0.25);
-  --focus-shadow-primary: rgba(96, 165, 250, 0.35);
+  --focus-shadow: rgba(96, 165, 250, 0.3);
+  --focus-shadow-primary: rgba(147, 197, 253, 0.4);
 
-  --status-success: #22C55E;
-  --status-error: #F87171;
+  --status-success: #4ADE80;
+  --status-error: #FCA5A5;
 
   --header-bg: rgba(11, 17, 32, 0.88);
   --shadow-card: 0px 2px 6px rgba(2, 6, 23, 0.35);
   --shadow-card-hover: 0px 16px 32px -4px rgba(2, 6, 23, 0.55);
+  color-scheme: dark;
 }
 
 /* ==========================================================================
@@ -248,7 +257,7 @@ section {
   line-height: 1.33;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent-primary);
+  color: var(--accent-link);
   margin-bottom: var(--space-1);
 }
 
@@ -501,7 +510,7 @@ section {
 
 .nav-link:hover,
 .nav-link[aria-current="page"] {
-  color: var(--accent-primary);
+  color: var(--accent-link);
 }
 
 .header-actions {
@@ -528,6 +537,63 @@ section {
 .header-github-link:hover {
   color: var(--text-primary);
   background-color: var(--bg-subtle);
+}
+
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  width: 44px;
+  height: 44px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-pill);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out);
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--bg-subtle);
+  border-color: var(--accent-link);
+  color: var(--accent-link);
+}
+
+.theme-toggle-btn:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px var(--focus-shadow);
+}
+
+/* Visibilidad de íconos Sol/Luna según tema activo */
+.theme-toggle-btn .icon-sun {
+  display: none;
+}
+
+.theme-toggle-btn .icon-moon {
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle-btn .icon-sun {
+    display: block;
+  }
+  :root:not([data-theme="light"]) .theme-toggle-btn .icon-moon {
+    display: none;
+  }
+}
+
+[data-theme="dark"] .theme-toggle-btn .icon-sun {
+  display: block;
+}
+
+[data-theme="dark"] .theme-toggle-btn .icon-moon {
+  display: none;
 }
 
 .header-actions > .btn {
@@ -922,7 +988,7 @@ section {
   background: none;
   border: none;
   padding: 6px 0;
-  color: var(--accent-primary);
+  color: var(--accent-link);
   font-family: var(--font-body);
   font-size: 0.9375rem;
   font-weight: 600;
@@ -931,7 +997,7 @@ section {
 }
 
 .project-action-link:hover {
-  color: var(--accent-hover);
+  color: var(--accent-link-hover);
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -1173,8 +1239,8 @@ section {
 
 .contact-link:hover {
   background-color: var(--bg-subtle);
-  border-color: var(--accent-primary);
-  color: var(--accent-primary);
+  border-color: var(--accent-link);
+  color: var(--accent-link);
 }
 
 .contact-link:focus-visible {
@@ -1327,11 +1393,11 @@ section {
 }
 
 .footer-nav-list a:hover {
-  color: var(--accent-primary);
+  color: var(--accent-link);
 }
 
 .back-to-top {
-  color: var(--accent-primary);
+  color: var(--accent-link);
   font-weight: 600;
 }
 
