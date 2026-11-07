@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Máximo Valentino Scévola | Diseñador UX/UI &amp; Desarrollador de Software</title>
+  <meta name="description" content="Portfolio de Máximo Valentino Scévola (Valen). Estudiante avanzado de Lic. en Sistemas (UADER), Diseñador UX/UI y Desarrollador Backend en Python y FastAPI.">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Máximo Valentino Scévola | Diseñador UX/UI &amp; Desarrollador de Software">
+  <meta property="og:description" content="Portfolio de Máximo Valentino Scévola (Valen). Estudiante avanzado de Lic. en Sistemas (UADER), Diseñador UX/UI y Desarrollador Backend en Python y FastAPI.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-preview.webp">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Theme & Favicon -->
+  <meta name="theme-color" content="#F6F5F2">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Styles & Scripts -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- 1. Header / Navegación -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-logo" aria-label="Máximo Valentino Scévola - Ir al inicio">
+        <span class="brand-initials" aria-hidden="true">MVS</span>
+        <span class="brand-name">Valen Scévola</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#skills" class="nav-link">Habilidades</a></li>
+          <li><a href="#projects" class="nav-link">Proyectos</a></li>
+          <li><a href="#experience" class="nav-link">Trayectoria</a></li>
+          <li><a href="#about" class="nav-link">Sobre mí</a></li>
+          <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://github.com/valenscevola" target="_blank" rel="noopener noreferrer" class="header-github-link" aria-label="Perfil de GitHub de Valen Scévola (abre en una nueva pestaña)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm">Hablemos</a>
+        <button
+          type="button"
+          class="mobile-menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Abrir menú de navegación"
+        >
+          <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="mobile-menu-drawer" hidden>
+      <nav aria-label="Navegación móvil">
+        <ul class="mobile-nav-list">
+          <li><a href="#skills" class="mobile-nav-link">Habilidades</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Proyectos</a></li>
+          <li><a href="#experience" class="mobile-nav-link">Trayectoria</a></li>
+          <li><a href="#about" class="mobile-nav-link">Sobre mí</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contacto</a></li>
+        </ul>
+        <div class="mobile-menu-cta">
+          <a href="#contact" class="btn btn-primary btn-block">Hablemos</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- 2. Sección Hero -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="availability-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Disponible para oportunidades IT y proyectos · Remoto / Híbrido</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-name">Máximo Valentino Scévola</span>
+            <span class="hero-role">Diseñador UX/UI &amp; Desarrollador de Software.</span>
+          </h1>
+
+          <p class="hero-description">
+            Transformo requerimientos complejos en interfaces intuitivas y accesibles, respaldadas por arquitecturas de código limpias en Python y JavaScript. Diseño pensando en las personas y construyo pensando en la escalabilidad.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Ver proyectos destacados</span>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Ponerse en contacto</a>
+          </div>
+
+          <p class="hero-location">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Concepción del Uruguay, Argentina · GMT-3</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Sección Métricas / Highlights -->
+    <section id="metrics" class="metrics-section" aria-label="Métricas destacadas">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <p class="metric-number">3+</p>
+            <p class="metric-label">Años de formación en Sistemas y desarrollo de software</p>
+          </div>
+          <div class="metric-card">
+            <p class="metric-number">10+</p>
+            <p class="metric-label">Proyectos académicos y personales de punta a punta</p>
+          </div>
+          <div class="metric-card">
+            <p class="metric-number">18+</p>
+            <p class="metric-label">Tecnologías, frameworks y herramientas de diseño en uso</p>
+          </div>
+          <div class="metric-card">
+            <p class="metric-number">100%</p>
+            <p class="metric-label">Enfoque en accesibilidad WCAG 2.2 AA y viabilidad técnica</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Sección Skills -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <header class="section-header">
+          <p class="overline">HABILIDADES</p>
+          <h2 class="section-title">El puente entre el diseño de interfaz y la lógica del servidor</h2>
+          <p class="section-subtitle">Herramientas que utilizo a diario para investigar, prototipar y llevar productos digitales a producción sin fricción entre áreas.</p>
+        </header>
+
+        <div class="skills-grid">
+          <!-- Categoría 1 -->
+          <article class="skill-card">
+            <h3 class="card-title">Diseño UX/UI &amp; Research</h3>
+            <p class="card-description">Diseño interfaces centradas en el usuario con sistemas de componentes escalables y accesibilidad integrada desde el primer boceto.</p>
+            <ul class="tag-list" aria-label="Tecnologías de Diseño UX/UI y Research">
+              <li class="tag-tech">Figma</li>
+              <li class="tag-tech">User Research</li>
+              <li class="tag-tech">Arquitectura de Información</li>
+              <li class="tag-tech">Wireframing &amp; Prototipado</li>
+              <li class="tag-tech">Design Systems</li>
+              <li class="tag-tech">Accesibilidad WCAG 2.2</li>
+            </ul>
+          </article>
+
+          <!-- Categoría 2 -->
+          <article class="skill-card">
+            <h3 class="card-title">Desarrollo Frontend &amp; Maquetación</h3>
+            <p class="card-description">Traduzco prototipos de alta fidelidad en código limpio, semántico y responsivo cuidando el rendimiento y cada microinteracción.</p>
+            <ul class="tag-list" aria-label="Tecnologías de Desarrollo Frontend y Maquetación">
+              <li class="tag-tech">HTML5 Semántico</li>
+              <li class="tag-tech">CSS3 (Grid &amp; Flexbox)</li>
+              <li class="tag-tech">JavaScript (ES6+)</li>
+              <li class="tag-tech">Responsive Design</li>
+              <li class="tag-tech">Tailwind CSS</li>
+              <li class="tag-tech">Optimización Web</li>
+            </ul>
+          </article>
+
+          <!-- Categoría 3 -->
+          <article class="skill-card">
+            <h3 class="card-title">Backend, Datos &amp; Herramientas</h3>
+            <p class="card-description">Construyo APIs RESTful rápidas, documentadas y tipadas que garantizan la integridad de los datos detrás de cada pantalla.</p>
+            <ul class="tag-list" aria-label="Tecnologías de Backend, Datos y Herramientas">
+              <li class="tag-tech">Python</li>
+              <li class="tag-tech">FastAPI</li>
+              <li class="tag-tech">SQLAlchemy</li>
+              <li class="tag-tech">Node.js / Express</li>
+              <li class="tag-tech">Git &amp; GitHub</li>
+              <li class="tag-tech">Linux (WSL) &amp; Docker</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Sección Proyectos -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <header class="section-header">
+          <p class="overline">PROYECTOS</p>
+          <h2 class="section-title">Trabajo seleccionado</h2>
+        </header>
+
+        <div class="projects-grid">
+          <!-- Tarjeta Proyecto 1 (Principal - UX/UI & Full Stack) -->
+          <article class="project-card project-card-featured">
+            <figure class="project-figure">
+              <img
+                src="assets/project-smartticket.webp"
+                alt="Vista previa de la interfaz de SmartTicket mostrando la selección visual de sectores, resumen transparente de costos y documentación de la API en FastAPI"
+                width="548"
+                height="308"
+                loading="lazy"
+              >
+            </figure>
+            <div class="project-body">
+              <div class="project-header">
+                <div>
+                  <h3 class="card-title">SmartTicket — Plataforma de Venta de Entradas y Gestión de Eventos</h3>
+                  <time class="project-year" datetime="2026">2026</time>
+                </div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="card-description">Diseño de experiencia de compra sin fricción e implementación de arquitectura backend transaccional para la reserva y validación de entradas en tiempo real.</p>
+              <p class="badge-impact">Checkout reducido a 3 pasos · API 100% documentada</p>
+              <div class="project-footer">
+                <ul class="tag-list" aria-label="Tecnologías utilizadas en SmartTicket">
+                  <li class="tag-tech">Figma</li>
+                  <li class="tag-tech">Python</li>
+                  <li class="tag-tech">FastAPI</li>
+                  <li class="tag-tech">SQLAlchemy</li>
+                  <li class="tag-tech">Swagger UI</li>
+                </ul>
+                <button
+                  type="button"
+                  id="open-case-study"
+                  class="project-action-link"
+                  aria-haspopup="dialog"
+                  aria-controls="case-study-modal"
+                >
+                  <span>Leer caso de estudio</span>
+                  <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta Proyecto 2 (UX/UI & Web) -->
+          <article class="project-card">
+            <figure class="project-figure">
+              <img
+                src="assets/project-uxui-web.webp"
+                alt="Sistema de diseño escalable en Figma con tokens de color accesibles WCAG AA y maquetación responsive mobile-first"
+                width="548"
+                height="308"
+                loading="lazy"
+              >
+            </figure>
+            <div class="project-body">
+              <div class="project-header">
+                <div>
+                  <h3 class="card-title">Rediseño y Despliegue Web UX/UI</h3>
+                  <time class="project-year" datetime="2026">2026</time>
+                </div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="card-description">Investigación de usuarios, creación de un sistema de diseño escalable en Figma y maquetación frontend mobile-first con despliegue continuo.</p>
+              <p class="badge-impact">Contraste 100% WCAG AA · Deploy automatizado CI/CD</p>
+              <div class="project-footer">
+                <ul class="tag-list" aria-label="Tecnologías utilizadas en Rediseño y Despliegue Web UX/UI">
+                  <li class="tag-tech">Figma</li>
+                  <li class="tag-tech">Design System</li>
+                  <li class="tag-tech">HTML5</li>
+                  <li class="tag-tech">CSS3</li>
+                  <li class="tag-tech">Netlify</li>
+                </ul>
+                <a
+                  href="https://github.com/valenscevola"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-action-link"
+                >
+                  <span>Explorar proyecto y deploy</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta Proyecto 3 (Algoritmos & Visualización) -->
+          <article class="project-card">
+            <figure class="project-figure">
+              <img
+                src="assets/project-starwars-graphs.webp"
+                alt="Visualización de red de nodos y aristas del universo Star Wars calculando caminos mínimos con algoritmos de Dijkstra y Kruskal en Python"
+                width="548"
+                height="308"
+                loading="lazy"
+              >
+            </figure>
+            <div class="project-body">
+              <div class="project-header">
+                <div>
+                  <h3 class="card-title">Motor de Grafos Star Wars</h3>
+                  <time class="project-year" datetime="2026">2026</time>
+                </div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="card-description">Aplicación en Python para el análisis de redes complejas de personajes, cálculo de árboles de expansión mínima y búsqueda de rutas óptimas.</p>
+              <p class="badge-impact">Optimización de recorridos con Dijkstra y Kruskal</p>
+              <div class="project-footer">
+                <ul class="tag-list" aria-label="Tecnologías utilizadas en Motor de Grafos Star Wars">
+                  <li class="tag-tech">Python</li>
+                  <li class="tag-tech">Estructuras de Datos</li>
+                  <li class="tag-tech">Teoría de Grafos</li>
+                  <li class="tag-tech">Algoritmos</li>
+                  <li class="tag-tech">Git</li>
+                </ul>
+                <a
+                  href="https://github.com/valenscevola"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-action-link"
+                >
+                  <span>Ver repositorio en GitHub</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Sección Experiencia y Formación -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <header class="section-header">
+          <p class="overline">TRAYECTORIA</p>
+          <h2 class="section-title">Formación académica y experiencia práctica</h2>
+        </header>
+
+        <ol class="timeline">
+          <!-- Ítem 1 -->
+          <li class="timeline-item">
+            <div class="timeline-period">
+              <span>2024 – Presente</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-heading">
+                <span class="timeline-role">Licenciatura en Sistemas de Información</span>
+                <span class="timeline-separator" aria-hidden="true">·</span>
+                <span class="timeline-institution">Universidad Autónoma de Entre Ríos (UADER - FCyT)</span>
+              </h3>
+              <ul class="timeline-achievements">
+                <li>Formación integral en Ingeniería de Software, Algoritmos y Estructuras de Datos, Programación Orientada a Objetos, Arquitectura de Computadoras y Diseño UX/UI.</li>
+                <li>Liderazgo y colaboración en repositorios grupales utilizando Git/GitHub, aplicando metodologías de análisis de requerimientos y documentación bajo estándares académicos.</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Ítem 2 -->
+          <li class="timeline-item">
+            <div class="timeline-period">
+              <span>2025 – Presente</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-heading">
+                <span class="timeline-role">Desarrollador de Software &amp; Diseñador UX/UI (Proyectos Académicos e Independientes)</span>
+                <span class="timeline-separator" aria-hidden="true">·</span>
+                <span class="timeline-institution">UADER - FCyT / Práctica Independiente</span>
+              </h3>
+              <ul class="timeline-achievements">
+                <li>Diseño y desarrollo de aplicaciones web y servicios backend utilizando Python (FastAPI, SQLAlchemy), JavaScript y maquetación accesible en HTML5/CSS3.</li>
+                <li>Ejecución completa de procesos de diseño de experiencia de usuario: desde la investigación, creación de proto-personas y arquitectura de información hasta el prototipado interactivo en Figma.</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Ítem 3 -->
+          <li class="timeline-item">
+            <div class="timeline-period">
+              <span>2026</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-heading">
+                <span class="timeline-role">Especialización Continua en Desarrollo Web y Diseño de Interfaces</span>
+                <span class="timeline-separator" aria-hidden="true">·</span>
+                <span class="timeline-institution">Formación Complementaria &amp; Proyectos Open Source</span>
+              </h3>
+              <ul class="timeline-achievements">
+                <li>Capacitación intensiva en desarrollo con JavaScript moderno, maquetación avanzada, contenedores en entornos Linux (WSL/Docker) y despliegue en la nube.</li>
+                <li>Aplicación práctica de sistemas de diseño, grillas modulares y pautas de accesibilidad web WCAG 2.2 en entornos de producción reales.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 7. Sección Sobre Mí -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <header class="section-header">
+          <p class="overline">SOBRE MÍ</p>
+          <h2 class="section-title">Lógica de ingeniería, sensibilidad de diseño</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <p class="about-paragraph">
+              Soy Máximo Valentino Scévola, estudiante avanzado de la Licenciatura en Sistemas de Información en Concepción del Uruguay. Mi trabajo vive exactamente en la intersección donde el diseño de experiencia se encuentra con la arquitectura de software: disfruto tanto de investigar qué necesita un usuario y prototipar una interfaz limpia en Figma, como de abrir la terminal en Linux para programar la API en Python que le da vida.
+            </p>
+            <p class="about-paragraph">
+              Fuera del código y las pantallas, me apasiona la relojería mecánica y la restauración de calibres clásicos. Esa misma paciencia y obsesión por la precisión milimétrica —donde cada engranaje interno debe funcionar en perfecta armonía para que la esfera exterior sea clara, legible y confiable— es la filosofía que aplico a cada línea de código y a cada componente que diseño.
+            </p>
+
+            <div class="philosophy-grid">
+              <article class="philosophy-card">
+                <h3 class="philosophy-title">Diseño viable en código</h3>
+                <p class="philosophy-text">Prototipo interfaces contemplando estados de carga, errores de servidor y modelos de datos reales desde el día uno.</p>
+              </article>
+
+              <article class="philosophy-card">
+                <h3 class="philosophy-title">La claridad como estándar</h3>
+                <p class="philosophy-text">Priorizo interfaces limpias, contrastes accesibles (WCAG AA) y arquitecturas backend bien documentadas que otros desarrolladores disfruten leer.</p>
+              </article>
+
+              <article class="philosophy-card">
+                <h3 class="philosophy-title">Mejora e iteración constante</h3>
+                <p class="philosophy-text">Entregas incrementales, control de versiones ordenado en Git y atención obsesiva a los detalles tanto en el frontend como en la API.</p>
+              </article>
+            </div>
+          </div>
+
+          <figure class="about-portrait">
+            <img
+              src="assets/profile-valen-scevola.webp"
+              alt="Retrato de Máximo Valentino Scévola, Diseñador UX/UI y Desarrollador de Software"
+              width="400"
+              height="480"
+              loading="lazy"
+            >
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Sección Contacto -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p class="overline">CONTACTO</p>
+            <h2 class="section-title">¿Buscás un perfil que conecte diseño y código? Hablemos.</h2>
+            <p class="section-subtitle">
+              Estoy disponible para sumarme a equipos de desarrollo y producto, tanto en posiciones junior/trainee como en proyectos desafiantes. Escribime y te respondo a la brevedad.
+            </p>
+
+            <ul class="contact-direct-links" aria-label="Enlaces de contacto directo y redes profesionales">
+              <li>
+                <a href="mailto:valenscevola@gmail.com" class="contact-link">
+                  <span>Copiar email</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/valenscevola/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  <span>LinkedIn</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/valenscevola" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  <span>GitHub</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </li>
+              <li>
+                <a href="assets/CV-Maximo-Valentino-Scevola.pdf" download class="contact-link">
+                  <span>Descargar CV en PDF</span>
+                  <span aria-hidden="true">↓</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form name="contact" method="POST" data-netlify="true" class="contact-form">
+              <input type="hidden" name="form-name" value="contact">
+
+              <div class="form-field">
+                <label for="contact-name" class="form-label">Tu nombre</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  class="form-input"
+                  autocomplete="name"
+                  placeholder="Ej. Ana García"
+                  required
+                >
+              </div>
+
+              <div class="form-field">
+                <label for="contact-email" class="form-label">Tu correo electrónico</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  class="form-input"
+                  autocomplete="email"
+                  placeholder="nombre@empresa.com"
+                  required
+                >
+              </div>
+
+              <div class="form-field">
+                <label for="contact-message" class="form-label">¿En qué proyecto o equipo estás pensando?</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  class="form-input form-textarea"
+                  rows="4"
+                  placeholder="Contame sobre el rol, el proyecto o cómo podemos colaborar..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Enviar mensaje</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 9. Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <p class="footer-copyright">
+          © 2026 Máximo Valentino Scévola. Diseñado en Figma y desarrollado desde Concepción del Uruguay, Argentina.
+        </p>
+
+        <nav class="footer-nav" aria-label="Navegación del pie de página">
+          <ul class="footer-nav-list">
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#experience">Trayectoria</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-credits">
+          <span>Tipografías Space Grotesk &amp; Plus Jakarta Sans</span>
+          <span aria-hidden="true">·</span>
+          <span>Accesibilidad WCAG 2.2 AA</span>
+          <span aria-hidden="true">·</span>
+          <a href="#main-content" class="back-to-top">Volver arriba <span aria-hidden="true">↑</span></a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal del Caso de Estudio: SmartTicket -->
+  <dialog id="case-study-modal" class="modal" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <header class="modal-header">
+        <div class="modal-header-top">
+          <p class="overline">CASO DE ESTUDIO DESTACADO · UX/UI &amp; BACKEND</p>
+          <button
+            type="button"
+            id="close-case-study"
+            class="modal-close-btn"
+            aria-label="Cerrar caso de estudio"
+          >
+            <span aria-hidden="true">✕</span>
+          </button>
+        </div>
+
+        <h2 id="modal-title" class="modal-title">SmartTicket: De la experiencia del usuario a la arquitectura de datos</h2>
+
+        <p class="modal-quick-facts">
+          <strong>Rol:</strong> Diseñador UX/UI &amp; Desarrollador Backend <span aria-hidden="true">|</span>
+          <strong>Año:</strong> 2026 <span aria-hidden="true">|</span>
+          <strong>Stack:</strong> Figma, Python, FastAPI, SQLAlchemy, Uvicorn
+        </p>
+
+        <div class="modal-links">
+          <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            <span>Ver Prototipo en Figma</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://github.com/valenscevola" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            <span>Ver Código en GitHub</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://github.com/valenscevola" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            <span>Explorar Swagger API</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </header>
+
+      <div class="modal-body">
+        <section class="case-study-block" aria-labelledby="cs-block-1">
+          <h3 id="cs-block-1" class="case-study-heading">El Problema (Fricción en la compra de tickets y validación de eventos)</h3>
+          <p>
+            Comprar entradas para eventos de alta demanda suele ser una experiencia frustrante para el usuario y crítica para el servidor. Desde el lado de la experiencia (UX), las plataformas tradicionales sufren de costos ocultos hasta el último paso, formularios interminables y mensajes de error ambiguos cuando se agota el cupo. Desde el lado técnico, el diseño de interfaz suele realizarse de forma aislada a la lógica del backend, generando inconsistencias cuando dos usuarios intentan reservar la misma ubicación en simultáneo.
+          </p>
+        </section>
+
+        <section class="case-study-block" aria-labelledby="cs-block-2">
+          <h3 id="cs-block-2" class="case-study-heading">El Proceso UX (Definición de usuario, arquitectura, wireframes y decisiones de interfaz)</h3>
+          <p>
+            El proceso comenzó definiendo dos perfiles clave: el comprador que busca asegurar su entrada en menos de dos minutos desde el celular, y el organizador que necesita controlar el aforo en tiempo real. A través de un mapa de arquitectura de información, eliminé los pasos innecesarios y estructuré un flujo de conversión directo en 3 etapas: Selección visual de sector → Resumen transparente de costos → Confirmación instantánea. En la etapa de wireframing en Figma, prioricé el diseño de casos borde (edge cases): pantallas de carga (skeletons), estados vacíos y alertas preventivas claras antes de enviar el formulario.
+          </p>
+        </section>
+
+        <section class="case-study-block" aria-labelledby="cs-block-3">
+          <h3 id="cs-block-3" class="case-study-heading">La Solución UI y Técnica (Jerarquía visual clara, estados de carga/error y respaldo con API rápida en FastAPI)</h3>
+          <p>
+            Diseñé un sistema de componentes con alto contraste (WCAG 2.2 AA) donde la disponibilidad de cada evento se comunica mediante badges semánticos inmediatos ("Disponible", "Últimas ubicaciones", "Agotado"). Para respaldar esta interfaz sin demoras, construí una API RESTful asíncrona utilizando Python y FastAPI sobre un servidor Uvicorn. Modelé la base de datos relacional con SQLAlchemy asegurando la integridad de cada orden de compra, y alineé cada componente de Figma con los esquemas de respuesta JSON documentados en Swagger. Así, cada estado de error o éxito de la API (200, 400, 404, 409) tiene su correlato exacto y humano en la interfaz.
+          </p>
+        </section>
+
+        <section class="case-study-block" aria-labelledby="cs-block-4">
+          <h3 id="cs-block-4" class="case-study-heading">Resultados y Aprendizajes (Métricas de usabilidad y aprendizajes del trabajo)</h3>
+          <ul class="case-study-results">
+            <li>
+              <strong>Impacto en Usabilidad:</strong> Reducción del flujo de reserva a solo 3 pantallas principales, disminuyendo la carga cognitiva y eliminando puntos de abandono por falta de información de precios.
+            </li>
+            <li>
+              <strong>Eficiencia en Desarrollo:</strong> El diseño de componentes basado en contratos de API redujo a cero el retrabajo entre el prototipo de Figma y la estructura de endpoints en FastAPI.
+            </li>
+            <li>
+              <strong>Aprendizaje Clave:</strong> Pensar el modelo de datos en SQLAlchemy al mismo tiempo que los flujos de usuario en Figma permite anticipar errores de concurrencia y transformarlos en microinteracciones claras que guían al usuario en lugar de frustrarlo.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
+
