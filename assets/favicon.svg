@@ -1,16 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MVS">
-  <rect width="64" height="64" rx="14" fill="#0F172A"/>
-  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#1E40AF" stroke-width="2"/>
+  <rect width="64" height="64" rx="14" fill="#1E40AF"/>
   <text
     x="50%"
     y="54%"
     dominant-baseline="middle"
     text-anchor="middle"
-    fill="#F6F5F2"
-    font-family="system-ui, -apple-system, 'Space Grotesk', sans-serif"
-    font-size="22"
+    fill="#FFFFFF"
+    font-family="'Space Grotesk', system-ui, -apple-system, sans-serif"
+    font-size="23"
     font-weight="700"
-    letter-spacing="-0.5"
+    letter-spacing="-0.8"
   >MVS</text>
 </svg>
-
