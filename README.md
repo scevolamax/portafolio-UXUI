@@ -26,7 +26,6 @@ El proyecto traduce requerimientos de negocio y necesidades de reclutadores IT e
 
 - **URL Pública Desplegada (Netlify):** https://maximo-scevola-uxui.netlify.app
 - **Archivo de Diseño y Prototipo en Figma:** https://www.figma.com/design/GG6bmUU5Uc5m8SvYfVpAPE/TP-Final-UX-UI---M%C3%A1ximo-Sc%C3%A9vola?node-id=0-1&t=slXdOa7MZyRLsCc6-1
-- **Repositorio Oficial en GitHub:** https://github.com/scevolamax/portafolio-UXUI.git
 
 ---
 
